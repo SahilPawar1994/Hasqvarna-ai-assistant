@@ -1,0 +1,143 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 72px 0 32px;
+}
+
+.app-header {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: #397447;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.app-header h1 {
+  margin: 12px 0;
+  font-size: clamp(30px, 5vw, 44px);
+  letter-spacing: -1.5px;
+}
+
+.app-header p {
+  color: #667067;
+  line-height: 1.6;
+}
+
+.assistant-card {
+  padding: 28px;
+  background: white;
+  border: 1px solid #e2e7df;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgb(30 50 30 / 5%);
+}
+
+.query-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 650;
+}
+
+.query-form textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 16px;
+  border: 1px solid #d7ded5;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.query-form textarea:focus {
+  border-color: #397447;
+}
+
+.query-form textarea:disabled {
+  background: #f6f7f5;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.form-footer span {
+  color: #737d73;
+  font-size: 12px;
+}
+
+.form-footer button {
+  padding: 12px 22px;
+  color: white;
+  background: #245b35;
+  border: none;
+  border-radius: 8px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.form-footer button:hover:not(:disabled) {
+  background: #194529;
+}
+
+.form-footer button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.answer-panel {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #e8ebe6;
+}
+
+.answer-panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.placeholder {
+  color: #858d84;
+}
+
+.answer-content {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+
+.error-message {
+  margin-top: 18px;
+  padding: 12px 14px;
+  color: #a12727;
+  background: #fff0f0;
+  border: 1px solid #f1caca;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.app-footer {
+  padding: 24px 0;
+  color: #7b847a;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .app-shell {
+    padding-top: 40px;
+  }
+
+  .assistant-card {
+    padding: 18px;
+  }
+}
